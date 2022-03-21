@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tv_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="80dp"
+        android:text="Are you sure to quit?"
+        android:textSize="30dp"
+        android:textStyle="bold"/>
+
+    <RelativeLayout
+        android:id="@+id/rg_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_tip"
+        android:gravity="center"
+        android:layout_marginHorizontal="10dp"
+        android:orientation="horizontal"
+        android:background="#00BCD4"
+        android:padding="20dp">
+
+        <Button
+            android:id="@+id/tb_sure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:background="@drawable/btn_corner"
+            android:text="Sure"
+            android:textAllCaps="false"
+            android:textSize="30sp"
+            android:paddingHorizontal="30dp"
+            android:layout_marginRight="20dp"/>
+
+        <Button
+            android:id="@+id/tb_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@+id/tb_sure"
+            android:background="@drawable/btn_corner"
+            android:text="Cancel"
+            android:textAllCaps="false"
+            android:textSize="30sp"
+            android:paddingHorizontal="10dp"
+            android:layout_marginLeft="20dp"/>
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tv_old"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text=" old  password:"
+        android:textSize="30sp"
+        android:layout_below="@+id/rg_btn"/>
+
+    <EditText
+        android:id="@+id/et_old"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rg_btn"
+        android:textSize="20sp"
+        android:hint="enter old pswd"
+        android:layout_alignBaseline="@+id/tv_old"
+        android:layout_toEndOf="@+id/tv_old"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/et_corner"/>
+
+    <TextView
+        android:id="@+id/tv_new"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="new password:"
+        android:textSize="30sp"
+        android:layout_below="@+id/tv_old"/>
+    <EditText
+        android:id="@+id/et_new"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:background="@drawable/et_corner"
+        android:hint="enter new pswd"
+        android:layout_marginStart="10dp"
+        android:layout_below="@+id/et_old"
+        android:layout_toEndOf="@+id/tv_new"
+        android:layout_alignBaseline="@+id/tv_new"/>
+
+    <Button
+        android:id="@+id/btn_task2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_new"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/btn_corner"
+        android:text="task2"
+        android:textAllCaps="false"
+        android:textColor="#FF9800"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/btn_task3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="task3"
+        android:textAllCaps="false"
+        android:textSize="30sp"
+        android:textColor="#FF9800"
+        android:background="@drawable/btn_corner"
+        android:layout_below="@+id/btn_task2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"/>
+
+</RelativeLayout>

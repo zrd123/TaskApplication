@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".E2T2Activity">
+
+    <Button
+        android:id="@+id/btn_e2t1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="30dp"
+        android:text="task1"
+        android:textAllCaps="false"
+        android:textColor="#FF9800"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/btn_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/btn_e2t1"
+        android:text="one"
+        android:textAllCaps="false"
+        android:textColor="#FF9800"
+        android:textSize="30sp"
+        android:layout_marginHorizontal="10dp"/>
+
+    <Button
+        android:id="@+id/btn_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_one"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="two"
+        android:textAllCaps="false"
+        android:textColor="#FF9800"
+        android:textSize="30sp"
+        android:layout_marginHorizontal="10dp"/>
+
+    <Button
+        android:id="@+id/btn_three"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_two"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/btn_corner"
+        android:backgroundTint="#9C27B0"
+        android:text="three"
+        android:textAllCaps="false"
+        android:textColor="#FF9800"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/btn_four"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_three"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/btn_corner"
+        android:text="four"
+        android:textAllCaps="false"
+        android:textColor="#FF9800"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/btn_five"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_four"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/btn_press"
+        android:backgroundTint="#C5C1C1"
+        android:text="five"
+        android:onClick="onClick"
+        android:textAllCaps="false"
+        android:textColor="#FF9800"
+        android:textSize="30sp" />
+
+    <com.example.taskapplication.MyButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_five"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="30dp"
+        android:text="mybutton"
+        android:textAllCaps="false"
+        android:textColor="#FF9800"
+        android:textSize="30sp" />
+
+</RelativeLayout>
